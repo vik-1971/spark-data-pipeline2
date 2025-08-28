@@ -1,0 +1,10 @@
+pycache/
+*.pyc
+*.log
+.DS_Store
+
+/output/
+/logs/
+
+.ipynb_checkpoints/
+/data/*.ndjson
