@@ -1,19 +1,13 @@
-@echo off
-echo.
-echo Запуск ETL-пайплайна на PySpark...
-echo ======================================
-echo.
+@echo on
+echo Конвертируем JSON в NDJSON...
+jq -c . data/customers_with_orders.json > data/customers.ndjson
+
+echo Запускаем Spark...
 docker run -it --rm ^
   -v "%cd%:/work" ^
   --entrypoint="" ^
   apache/spark ^
   /opt/spark/bin/spark-submit ^
-  /work/src/etl_pipeline.py ^
-  /work/data/data.csv ^
-  /work/output
+  /work/src/etl_orders.py
 
-echo.
-echo ETL завершён.
-echo Результаты в папке output.
-echo.
 pause

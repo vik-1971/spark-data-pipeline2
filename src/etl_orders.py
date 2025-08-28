@@ -8,8 +8,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Читаем JSON с вложенными массивами
-#df = spark.read.json("/work/data/customers_with_orders.json")
-df = spark.read.json("/work/data/output.ndjson")
+df = spark.read.json("/work/data/customers.ndjson")
 print("Схема:")
 df.printSchema()
 
