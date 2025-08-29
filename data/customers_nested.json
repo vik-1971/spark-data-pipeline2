@@ -1,0 +1,6 @@
+{"name": "Alice", "age": 30, "city": "Moscow"}
+{"name": "Bob", "age": 25, "city": "SPb"}
+{"name": "Charlie", "age": 35, "city": "Kazan"}
+{"name": "Eve", "age": 32, "city": "London"}
+{"name": "Invalid line without quotes"}
+{"name": "Diana", "age": 28, "city": "Novosibirsk"}
