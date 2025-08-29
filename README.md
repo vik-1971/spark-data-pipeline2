@@ -24,5 +24,5 @@ docker run -it --rm `
   --entrypoint="" `
   apache/spark `
   /opt/spark/bin/spark-submit `
-  /work/src/etl_pipeline.py
+  /work/src/diagnose_json.py
 
